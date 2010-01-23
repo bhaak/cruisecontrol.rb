@@ -26,7 +26,7 @@ class TimeFormatter
   end
 
   def verbose
-    remove_leading_zero(@time.strftime('%I:%M %p on %d %B %Y'))
+    remove_leading_zero(@time.strftime('%H:%M on %d %B %Y'))
   end
 
   def round_trip_local

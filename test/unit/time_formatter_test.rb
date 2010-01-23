@@ -37,8 +37,8 @@ class TimeFormatterTest < Test::Unit::TestCase
   end
 
   def test_formats_verbose
-    assert_equal '1:30 PM on 01 July 2009',  TimeFormatter.new(Time.parse('2009-07-01 13:30:00')).verbose
-    assert_equal '12:30 PM on 01 July 2009', TimeFormatter.new(Time.parse('2009-07-01 12:30:00')).verbose
+    assert_equal '13:30 on 01 July 2009', TimeFormatter.new(Time.parse('2009-07-01 13:30:00')).verbose
+    assert_equal '12:30 on 01 July 2009', TimeFormatter.new(Time.parse('2009-07-01 12:30:00')).verbose
   end
 
   def test_formats_rss
